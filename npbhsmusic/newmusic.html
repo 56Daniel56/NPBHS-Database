@@ -1,0 +1,48 @@
+
+<html>
+	<head>
+	<title>Add New Student into the database</title>
+		<style>
+		input[type=text] {
+				width: 50%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+			}
+		
+		</style>
+	</head>
+	
+	
+	<body>
+		<div id = "main">
+		<center>
+         <form action = 'newmusic.php' method = "POST">
+			<label for="StudentID">StudentID</label>
+			<br>
+			<input autocomplete='off' class='StudentID'  type="text" name="StudentID" id="StudentID" value="<?php echo $_GET["StudentID"]; ?>" >
+			<br>			
+			<label>Format</label>
+			<br>
+			<input type = "text" name = "Format" id = "Format" required />
+			<br>
+			<label>Genre</label>
+			<br>
+			<input type = "text" name = "Genre" id = "Genre" required />
+			<br>
+			<label>Group</label>
+			<br>
+			<input type = "text" name = "Group" id = "Group" required />
+			<br>
+			<label>Title</label>
+			<br>
+			<input type = "text" name = "Title" id = "Title" required />
+			<br>
+
+            <input type = "submit" value ="Submit" name = "submit"  />
+            <br />
+         </form>
+		 <center>
+      </div>
+	</body>
+<html>
